@@ -1,0 +1,8 @@
+{
+  "urlRandomness": "dx-j2j",
+  "hostType": "lan",
+  "lanType": "ip",
+  "dev": true,
+  "minify": false,
+  "https": true
+}
