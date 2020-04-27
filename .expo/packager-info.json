@@ -2,9 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19003,
-  "packagerPid": 29310,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "packagerPid": 51165,
+  "expoServerNgrokUrl": "https://dx-j2j.aeeks.capstone.exp.direct",
+  "packagerNgrokUrl": "https://packager.dx-j2j.aeeks.capstone.exp.direct",
+  "ngrokPid": 51180,
   "webpackServerPort": null
 }

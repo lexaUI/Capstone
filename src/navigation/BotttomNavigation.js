@@ -40,10 +40,10 @@ export const BottomNavigation = () => {
 				}}
 			/>
 			<Tab.Screen
-				name="Private Chats"
+				name="Messages"
 				component={MessagesScreen}
 				options={{
-					tabBarLabel: "Private Chats",
+					tabBarLabel: "Messages",
 					tabBarIcon: ({ color }) => (
 						<Entypo name="chat" color={color} size={26} />
 					),
