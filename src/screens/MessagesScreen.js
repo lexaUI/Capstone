@@ -10,6 +10,7 @@ import {
   MessageList,
   MessageInput,
   ChannelList,
+  ChannelPreviewMessenger,
   IconBadge,
 } from 'stream-chat-expo';
 import { createAppContainer } from 'react-navigation';
@@ -53,7 +54,7 @@ class CustomChannelPreview extends PureComponent {
           flexDirection: 'row',
           borderBottomColor: '#EBEBEB',
           borderBottomWidth: 0,
-          padding: 10,
+		  padding: 10,
         }}
         onPress={this.onSelectChannel}
       >
@@ -63,7 +64,7 @@ class CustomChannelPreview extends PureComponent {
             display: 'flex',
             flexDirection: 'column',
             flex: 1,
-            paddingLeft: 10,
+			paddingLeft: 10,
           }}
         >
           <View
@@ -114,11 +115,11 @@ class ChannelListScreen extends PureComponent {
 	  return (
 		<SafeAreaView>
 		  <Chat client={chatClient}>
-			<View style={{ display: 'flex', height: '100%', padding: 10 }}>
+			<View style={{ display: 'flex', height: '100%', padding: 15 }}>
 			  <ChannelList
 				filters={{ type: 'messaging', members: { $in: ['lingering-dream-2'] } }}
 				sort={{ last_message_at: -1 }}
-				Preview={CustomChannelPreview}
+				Preview={CustomChannelPreview,ChannelPreviewMessenger}
 				onSelect={(channel) => {
 				  this.props.navigation.navigate('Channel', {
 					channel,

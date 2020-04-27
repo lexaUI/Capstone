@@ -42,6 +42,7 @@ const styles = EStyleSheet.create({
 		fontSize:32,
 		color:"#ff8282",
 		marginTop:70,
+		marginBottom: -20,
 	},
 	bkg: {
 		backgroundColor: "#f9f9f7",
